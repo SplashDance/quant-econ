@@ -1,4 +1,7 @@
+## Opens file in "read mode"
 data_file = open('us_cities.txt', 'r')
+
+# "Colon"-separated, apparently.
 for line in data_file:
     city, population = line.split(':')            # Tuple unpacking
     city = city.title()                           # Capitalize city names

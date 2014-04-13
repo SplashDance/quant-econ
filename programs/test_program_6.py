@@ -1,3 +1,5 @@
+## A test program.
+
 import pylab
 from random import normalvariate, uniform
 

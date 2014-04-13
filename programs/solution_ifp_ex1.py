@@ -8,7 +8,7 @@ K = 80
 V, c = initialize(m)
 print "Starting value function iteration"
 for i in range(K):
-    print "Current iterate = " + str(i)
+    print "Current iterate = %s" %  str(i)
     V = bellman_operator(m, V)  
 c1 = bellman_operator(m, V, return_policy=True)  
 
@@ -16,7 +16,7 @@ c1 = bellman_operator(m, V, return_policy=True)
 print "Starting policy function iteration"
 V, c2 = initialize(m)
 for i in range(K):
-    print "Current iterate = " + str(i)
+    print "Current iterate = %s" % str(i)
     c2 = coleman_operator(m, c2)
 
 fig, ax = plt.subplots()
